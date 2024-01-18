@@ -1,0 +1,151 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    background-color: #181818;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-logo {
+    max-width: 100px;
+}
+
+.nav-logo img {
+        border-radius: 50%;
+        height: 80px;
+        width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.link a {
+    position: relative;
+    padding-bottom: 0.75rem;
+    color: #fff;
+}
+
+.link a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    font-family: 'Poppins', sans-serif;
+    display: block;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgb(2, 0, 36);
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(100,43,115,1) 0%, rgba(4,0,4,1) 90% );
+    border: 0px;
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 5rem 2rem;
+}
+
+.blur{
+    position: absolute;
+    box-shadow: 0 0 1000px 50px #4016a9;
+    z-index: -100;
+}
+
+header{
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    height: 0px;
+}
+
+header .content h4{
+    margin-bottom: 1rem;
+    color: #ccc;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1{
+    color: #fff;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span{
+    color: rgba(100,43,115,1);
+
+}
+
+header .content p{
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+    visibility: hidden;
+    opacity: 0
+}
+
+
+.reserved{
+    height: 40px;
+    background-color:#181818;
+    margin-top: 470px;
+    color:#4f4e4e;
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.phone{
+    width: 500px;
+    height: 300px;
+}
